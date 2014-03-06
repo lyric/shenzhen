@@ -1,0 +1,33 @@
+s3_id: YOUR_ACCESS_ID
+s3_secret: YOUR_ACCESS_SECRET
+s3_bucket: BUCKET_NAME
+hockey_app_id: 65523b6494b74c2399848f19df8c559b
+
+#
+# App and Target are used to find your Info.plist file.
+# The Info.plist file is expected to be found at #{App}/#{Target}-Info.plist
+#
+App: Rooms
+Target: Rooms
+
+Specs:
+    SDKVersion: 6.1
+    Target: RoomsSpecs
+
+XcodeBuild:
+    Params:
+        workspace: Rooms.xcworkspace
+        scheme: Rooms
+
+#
+# This API token is created in HockeyApp for a developer account and gives
+# upload access to apps on HockeyApp. This should not need to be changed
+# between different Taptera apps.
+#
+HockeyApp:
+    ApiToken: redacted  # Linked to Ian's account
+
+
+Amazon:
+    access_key: AKIAJPZHPYZQYOGUHSBA
+    secret_access_key: d0v8jrC8THBoFi+tjd9Am4MciKLu8UiSASz5vip1
