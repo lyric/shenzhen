@@ -4,13 +4,13 @@ $:.push File.expand_path("../lib", __FILE__)
 require "shenzhen/version"
 
 Gem::Specification.new do |s|
-  s.name        = "shenzhen"
+  s.name        = "shenzhen-lyric"
   s.authors     = ["Mattt Thompson"]
   s.email       = "m@mattt.me"
   s.homepage    = "http://nomad-cli.com"
   s.version     = Shenzhen::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.summary     = "Shenzhen"
+  s.summary     = "Shenzhen-lyric"
   s.description = "CLI for Building & Distributing iOS Apps (.ipa Files)"
 
   s.add_dependency "commander", "~> 4.1"
