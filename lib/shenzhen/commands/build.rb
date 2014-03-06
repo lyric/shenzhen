@@ -18,6 +18,8 @@ command :build do |c|
 
   c.action do |args, options|
     validate_xcode_version!
+    config = Shenzhen::Config.new(options)
+    puts config.to_s
 
     @workspace = options.workspace
     @project = options.project unless @workspace
