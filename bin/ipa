@@ -18,7 +18,7 @@ program :help, 'Website', 'http://mattt.me'
 program :help_formatter, :compact
 
 global_option('--verbose') { $verbose = true }
-global_option('-c', '--config FILE', 'Load config data for your commands to use') { |file| puts "config file" }
+global_option('-f', '--file FILE', 'Load config data for your commands to use') { |file| puts "config file" }
 
 default_command :help
 
