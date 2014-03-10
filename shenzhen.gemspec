@@ -5,8 +5,8 @@ require "shenzhen/version"
 
 Gem::Specification.new do |s|
   s.name        = "shenzhen-lyric"
-  s.authors     = ["Mattt Thompson"]
-  s.email       = "m@mattt.me"
+  s.authors     = ["Mattt Thompson", "Lyric Hartley"]
+  s.email       = "lhartley@salesforce.com"
   s.homepage    = "http://nomad-cli.com"
   s.version     = Shenzhen::VERSION
   s.platform    = Gem::Platform::RUBY
