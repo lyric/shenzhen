@@ -60,6 +60,7 @@ module Shenzhen::XcodeBuild
 
     def settings(*args)
       options = args.last.is_a?(Hash) ? args.pop : {}
+      puts "xcodebuild #{(args + args_from_options(options)).join(" ")} -showBuildSettings"
       output = `xcodebuild #{(args + args_from_options(options)).join(" ")} -showBuildSettings 2> /dev/null`
       raise Error.new $1 if /^xcodebuild\: error\: (.+)$/ === output
       raise NilOutputError unless /\S/ === output

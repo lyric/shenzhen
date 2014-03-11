@@ -45,8 +45,17 @@ module Shenzhen
         self.class.send(:define_method, key) do
           @config[key]
         end
+        # if @config[key].is_a?(Hash) do
+        #   @config[key].each_key do |key|
+        #       self.class.send(:define_method, key) do
+        #         @config[key][key]
+        #      end
+        #     end
+        #   end
+        # end
       end
     end
+
     
   end
 end
