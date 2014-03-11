@@ -1,4 +1,3 @@
-![Shenzhen](https://raw.github.com/mattt/nomad-cli.com/assets/shenzhen-banner.png)
 
 Forked
 
